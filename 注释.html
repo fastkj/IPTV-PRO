@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>注释生成器</title>
+</head>
+
+<body>
+    <h1>注释生成器</h1>
+    <input type="text" id="inputText" placeholder="输入你的文字">
+    <button onclick="generateComment()">生成注释</button>
+    <p id="comment"></p>
+
+    <script>
+        function generateComment() {
+            var text = document.getElementById('inputText').value;
+            var comment = '/* ' + text + ' */';
+            document.getElementById('comment').innerHTML = comment;
+        }
+    </script>
+</body>
+
+</html>
